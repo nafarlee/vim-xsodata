@@ -2,8 +2,8 @@ if exists("b:current_syntax")
     finish
 endif
 
-syntax keyword xsodataKeyword as navigates with referential constraint principal dependent multiplicity
-syntax keyword xsodataSpecial association service namespace
+syntax keyword xsodataKeyword association service namespace as navigates with principal dependent multiplicity
+syntax keyword xsodataSpecial referential constraint
 syntax match xsodataComment "\/\/.*"
 syntax region xsodataString start=/\v"/  end=/\v"/
 
